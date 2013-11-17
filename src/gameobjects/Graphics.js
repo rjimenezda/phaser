@@ -58,14 +58,14 @@ Phaser.Graphics.prototype.destroy = function() {
 */
 Phaser.Graphics.prototype.drawPolygon = function (poly) {
 
-    graphics.moveTo(poly.points[0].x, poly.points[0].y);
+    this.moveTo(poly.points[0].x, poly.points[0].y);
 
     for (var i = 1; i < poly.points.length; i += 1)
     {
-        graphics.lineTo(poly.points[i].x, poly.points[i].y);
+        this.lineTo(poly.points[i].x, poly.points[i].y);
     }
 
-    graphics.lineTo(poly.points[0].x, poly.points[0].y);
+    this.lineTo(poly.points[0].x, poly.points[0].y);
     
 }
 
